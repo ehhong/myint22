@@ -30,6 +30,7 @@ li {
     background-color: #3D0814;
     outline: none;
     border: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #btn-example1:hover {
