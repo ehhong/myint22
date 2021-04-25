@@ -40,6 +40,23 @@ li {
     margin: 5vh 0 10vh;
     background-color: #ffdd93bb;
     padding: 2vh 2vw;
+    overflow: auto;
+}
+
+#chef {
+    width: auto;
+    height: 100%;
+}
+
+#dish-pic {
+    display:inline-block;
+    width: 20%;
+    height: 38vh;
+}
+
+#dish-desc {
+    display: inline-block;
+    width: 75%;
 }
 
 footer {
@@ -82,6 +99,9 @@ footer {
     }
 }
 @media screen and (max-width: 768px) {
+    #dish-desc {
+        width: 100%;
+    }
     .slotwrapper {
         height: 100px;
     }

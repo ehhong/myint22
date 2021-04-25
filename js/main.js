@@ -71,7 +71,7 @@ function on_slot_finish(num) {
         sauces[output[item_order.indexOf("sauce")]] + " " +
         sauce_nouns[Math.floor(Math.random() * sauce_nouns.length)] + ", " +
         side_adjs[Math.floor(Math.random() * side_adjs.length)] + " " +
-        sides[output[item_order.indexOf("side")]][0] + ", and " +
+        sides[output[item_order.indexOf("side")]][0] + " and " +
         seasoning_adjs[Math.floor(Math.random() * seasoning_adjs.length)] + " " +
         seasonings[output[item_order.indexOf("seasoning")]] + ", " +
         drink_adjs[Math.floor(Math.random() * drink_adjs.length)] + " " +
@@ -91,12 +91,12 @@ function on_slot_finish(num) {
 var seasonings = [
     "salt",
     "pepper",
-    "Tajin",
+    "Tajín",
     "red pepper flakes",
     "tea leaves",
     "garlic",
     "Samyang Korean HOT Spicy Noodle Fire Chicken Flavor packet",
-    "jalapeno",
+    "jalapeño",
     "lemon zest",
     "capers",
     "crushed elote chips",
@@ -105,7 +105,7 @@ var seasonings = [
 var sauces = [
     "lemon juice",
     "lime juice",
-    "tabasco",
+    "Tabasco",
     "Sriracha",
     "fish sauce",
     "chimichurri",
