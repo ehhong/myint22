@@ -1,11 +1,60 @@
+html {
+    border: 10px solid #7e7474;
+    width: 100%;
+}
+
 body {
     margin-top: 60px;
+    background-color: #c4b6b6;
+}
+
+h1 {
+    color: #39311d;
+    font-family: 'Orelega One', cursive;
+    font-size: 8vh;
+}
+
+p {
+    color: #39311d;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+    color: #39311d;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#btn-example1 {
+    background-color: #3D0814;
+    outline: none;
+    border: none;
+}
+
+#btn-example1:hover {
+    background-color: #6C0E24;
+}
+
+#dish {
+    margin: 5vh 0 10vh;
+    background-color: #ffdd93bb;
+    padding: 2vh 2vw;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .slotwrapper {
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid #ffdd93;
+    background-color: #ffdd9322;
     height: 15vh;
+    margin: 5vh 0 5vh 0;
 }
 .slotwrapper ul {
     padding: 0;
