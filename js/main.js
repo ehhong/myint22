@@ -5,7 +5,6 @@ function scaleFontSize() {
     for (i = 0; i < items.length; i++) {
         var name_len = items[i].innerHTML.length;
         var font_size = Math.ceil(Math.min((window.innerWidth / 4) / name_len, 24));
-        console.log(font_size);
         items[i].style.fontSize = String(font_size) + "px";
     }
 
@@ -47,15 +46,19 @@ function on_slot_finish(num) {
             }
             else {
                 output.push(Number(num_str[i]));
+                selected_item_idxs.splice(selected_item_idxs.indexOf(Number(num_str[i])), 1);
             }
         }
         else {
             output.push(Number(num_str[i]));
+            selected_item_idxs.splice(selected_item_idxs.indexOf(Number(num_str[i])), 1);
         }
         i++;
     }
     selected_item_idxs = [] // reset
 
+    console.log(num_str);
+    console.log(output);
     output = output.map(x => x - 1); // fix for 0-index
 
     // generate title
