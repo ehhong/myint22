@@ -4,7 +4,7 @@ function scaleFontSize() {
 
     for (i = 0; i < items.length; i++) {
         var name_len = items[i].innerHTML.length;
-        var font_size = 400 / name_len;
+        var font_size = Math.min(500 / name_len, 48);
         items[i].style.fontSize = String(font_size) + "px";
     }
 

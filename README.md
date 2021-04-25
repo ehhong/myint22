@@ -1,6 +1,6 @@
 # this is myint's 22nd birthday present / nightmare
-based on...
 
+based on Chow Kang's
 # jQuery Slot Machine
 Customized jQuery Slot Machine to suit developer's needs.
 
