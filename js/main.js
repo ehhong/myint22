@@ -4,7 +4,7 @@ function scaleFontSize() {
 
     for (i = 0; i < items.length; i++) {
         var name_len = items[i].innerHTML.length;
-        var font_size = Math.min(500 / name_len, 48);
+        var font_size = Math.min(400 / name_len, 36);
         items[i].style.fontSize = String(font_size) + "px";
     }
 
@@ -70,7 +70,7 @@ function on_slot_finish(num) {
         sauces[output[item_order.indexOf("sauce")]] + " " +
         sauce_nouns[Math.floor(Math.random() * sauce_nouns.length)] + ", " +
         side_adjs[Math.floor(Math.random() * side_adjs.length)] + " " +
-        sides[output[item_order.indexOf("side")]][0] + ", and topped with " +
+        sides[output[item_order.indexOf("side")]][0] + ", and " +
         seasoning_adjs[Math.floor(Math.random() * seasoning_adjs.length)] + " " +
         seasonings[output[item_order.indexOf("seasoning")]] + ", " +
         drink_adjs[Math.floor(Math.random() * drink_adjs.length)] + " " +
@@ -90,68 +90,68 @@ function on_slot_finish(num) {
 var seasonings = [
     "salt",
     "pepper",
-    "tajin",
+    "Tajin",
     "red pepper flakes",
     "tea leaves",
     "garlic",
     "Samyang Korean HOT Spicy Noodle Fire Chicken Flavor packet",
-    "Jalapeno",
+    "jalapeno",
     "lemon zest",
-    "Capers",
-    "Crushed elote chips",
+    "capers",
+    "crushed elote chips",
     "shredded coconut"]
 
 var sauces = [
     "lemon juice",
     "lime juice",
     "tabasco",
-    "sriracha",
+    "Sriracha",
     "fish sauce",
     "chimichurri",
-    "Mustard",
-    "Cream cheese",
+    "mustard",
+    "cream cheese",
     "berry jam",
     "red bean"]
 
 var vehicles = [
-    ["sourdough bread", "loaf"],
-    ["Egg", "rebirth"],
-    ["Prosciutto", "butcher"],
-    ["egg tofu", "slab"],
-    ["Havarti", "clover"],
-    ["Salmon", "swim"],
-    ["Bagel", "brunch"],
-    ["fried chicken", "roost"],
-    ["Soup", "broth"],
-    ["Ramen", "midnight snack"],
-    ["Steak", "fillet"],
-    ["Chicken", "hen"],
-    ["Pasta", "carbohydrates"],
-    ["Pizza", "flatbread"],
-    ["Curry", "Curr-tain call"],
-    ["Mussels", "crustacean"],
-    ["puff pastry", "puff"],
-    ["Salad", "garden"],
-    ["Scallion pancake", "allium"],
-    ["Pierogi", "bag"],
-    ["Meatball", "globe"]
+    ["sourdough bread", "Loaf"],
+    ["egg", "Rebirth"],
+    ["prosciutto", "Butcher"],
+    ["egg tofu", "Slab"],
+    ["havarti", "Clover"],
+    ["salmon", "Swim"],
+    ["bagel", "Brunch"],
+    ["fried chicken", "Roost"],
+    ["soup", "Broth"],
+    ["ramen", "Midnight Snack"],
+    ["steak", "Filet"],
+    ["chicken", "Hen"],
+    ["pasta", "Carbohydrates"],
+    ["pizza", "Flatbread"],
+    ["curry", "Curr-tain Call"],
+    ["mussels", "Crustacean"],
+    ["puff pastry", "Puff"],
+    ["salad", "Garden"],
+    ["scallion pancake", "Allium"],
+    ["pierogi", "Bag"],
+    ["meatball", "Globe"]
 ]
 
 var sides = [
-    ["Kimchi", "invigorating"],
-    ["Pineapple", "juicy"],
-    ["Elote", "crunchy"],
-    ["Platha", "flaky"],
+    ["kimchi", "Invigorating"],
+    ["pineapple", "Juicy"],
+    ["elote", "Crunchy"],
+    ["platha", "Flaky"],
     ["plain frozen yogurt", "COLD"],
-    ["Mangosteen", "sweet"],
-    ["Durian", "aromatic"],
-    ["shrimp chips", "seaside"],
-    ["Dragonfruit", "prickly"],
-    ["Grapefruit", "tart"],
-    ["Salami", "pig’s"],
-    ["Popover", "fluffy"],
-    ["goat cheese", "creamy"],
-    ["Burrata", "spherical"]
+    ["mangosteen", "Sweet"],
+    ["durian", "Aromatic"],
+    ["shrimp chips", "Seaside"],
+    ["dragonfruit", "Prickly"],
+    ["grapefruit", "Tart"],
+    ["salami", "Pig’s"],
+    ["popover", "Fluffy"],
+    ["goat cheese", "Creamy"],
+    ["burrata", "Spherical"]
 ]
 
 var drinks = [
@@ -159,25 +159,25 @@ var drinks = [
     "tequila",
     "plum wine",
     "soju",
-    "taiwan beer",
+    "Taiwan beer",
     "LA burdick's hot chocolate",
     "grapefruit juice",
     "grapefruit beer",
-    "la colombe cold brew"
+    "La Colombe cold brew"
 ]
 
 var vehicle_adjs = [
-    "poached",
-    "sauteed",
-    "roasted",
-    "griddled",
-    "grilled",
-    "pan-fried",
-    "boiled",
-    "steamed",
-    "toasted",
-    "deconstructed",
-    "smoked"
+    "Poached",
+    "Sauteed",
+    "Roasted",
+    "Griddled",
+    "Grilled",
+    "Pan-fried",
+    "Boiled",
+    "Steamed",
+    "Toasted",
+    "Deconstructed",
+    "Smoked"
 ]
 
 var sauce_nouns = [
@@ -195,13 +195,13 @@ var sauce_nouns = [
 ]
 
 var seasoning_adjs = [
-    "the essence of",
-    "a dash of",
-    "a hint of",
-    "a sprinkling of",
-    "a touch of",
+    "accented with the essence of",
+    "graced with a dash of",
+    "finished with a hint of",
+    "sprinkled with",
+    "topped with a touch of",
     "buried under",
-    "a light dusting of"
+    "lightly dusted with"
 ]
 
 var side_adjs = [
@@ -217,7 +217,7 @@ var side_adjs = [
 
 var drink_adjs = [
     "with a flute of",
-    ", all washed down with",
+    "all washed down with",
     "paired with",
     "with a line of shots of",
     "with a crystal goblet of",
